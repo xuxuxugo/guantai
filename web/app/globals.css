@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f3efe6;
+  --paper-2: #fbf8f2;
+  --ink: #1c1915;
+  --muted: #6f675c;
+  --line: #e0d8c8;
+  --cinnabar: #c24532;
+  --pine: #1d7a4a;
+  --amber: #a67c12;
+}
+
+@theme inline {
+  --font-sans: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", "Source Han Sans SC", sans-serif;
+  --font-serif: "Songti SC", "Noto Serif SC", "STSong", "PMingLiU", serif;
+  --font-mono: "IBM Plex Mono", "Sarasa Mono SC", "Noto Sans Mono", ui-monospace, monospace;
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: #f0d2cb;
+}
